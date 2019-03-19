@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Cookie|Pirata+One|Satisfy|Sniglet|Srisakdi|The+Girl+Next+Door');
 /* This
 is a
 comment! */
@@ -14,13 +15,56 @@ comment! */
 /* Type selector */
 
 p { /* select all <p>  */
-  font-size: 16px; /* 16px, ?pt, 100%, 1em, */
+  font-size: 1.2em; /* 16px, ?pt, 100%, 1em, */
+  font-family: 'Sniglet', serif;
   line-height: 1.5em;
 }
 
 figcaption {
-  font-weight: normal;
+  /*font-weight: normal;
   font-size: 0.75 em;
   line-height: 1.5 em;
-  font-family: Georgia, "New Times Roman", serif;
+  font-family: Georgia, "New Times Roman", serif;*/
+  font: normal 1em/1.5em 'Satisfy', cursive;
+  color: rgba(0,6,127,1);
+  text-align: center;;
+}
+
+/* Class selector (applied to as many elements as you like) */
+
+.milk-text { /* select elements with class="milk-text" */
+  font: bold 2.6em 'Pirata One', cursive;
+  color: purple;
+  text-shadow: 0 2px 3px #220546;
+}
+
+/* ID selector (apply to one unique element per page) */
+
+#logo { /* select elements with id="logo" */
+  background-color: aqua
+}
+
+/* Descendant selector */
+
+#logo h1 { /*selects <h1> if inside the id="logo" */
+  font-family: 'Baloo Chettan', serif;
+}
+#logo h2 { /*selects <h2> if inside the id="logo" */
+  font-family: 'Cookie', cursive;
+}
+
+/* Pseudo Selector */
+
+#details a:link, #details a:visited {
+  color: grey;
+  text-decoration: none;
+}
+#details a:hover {
+  font-family: Srisakdi, serif;
+  color: aqua;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: purple;
 }
